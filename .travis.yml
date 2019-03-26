@@ -20,5 +20,5 @@ install:
   - if [ $TRAVIS_OS_NAME = osx ]; then brew install python3; fi
   - if [ $TRAVIS_OS_NAME = osx ]; then brew install python@2; fi 
   - if [ $TRAVIS_OS_NAME = linux ]; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"; fi  
-  - if [ $TRAVIS_OS_NAME = linux ]; then brew install python3; fi"; fi  
+  - if [ $TRAVIS_OS_NAME = linux ]; then brew install python3; fi
   - if [ $TRAVIS_OS_NAME = linux ]; then brew install python@2; fi 
