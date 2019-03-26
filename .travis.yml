@@ -8,6 +8,7 @@ virtualenv:
   
 # command to run tests
 script:
-  - tests.py
+  - python2 tests.py
+  - python3 tests.py
   
 
