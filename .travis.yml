@@ -1,0 +1,14 @@
+os: osx
+osx_image: xcode10.1
+language: python
+python:
+  - 3.6
+  
+virtualenv:
+  system_site_packages: true
+  
+# command to run tests
+script:
+  - tests.py
+  
+
