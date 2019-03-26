@@ -9,7 +9,7 @@ os:
 osx_image: xcode10.1
   
 virtualenv:
-  system_site_packages: false
+  system_site_packages: true
   
 # command to run tests
 script:
