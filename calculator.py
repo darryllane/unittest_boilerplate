@@ -15,11 +15,13 @@ def divide(x, y):
 	return x / y
 
 def main():
+	__version__ = '0.1'
 	print("Select operation.")
 	print("1.Add")
 	print("2.Subtract")
 	print("3.Multiply")
 	print("4.Divide")
+	print("5.Version")
 	
 	# Take input from the user 
 	choice = int(input("Enter choice(1/2/3/4):"))
@@ -34,11 +36,17 @@ def main():
 	elif choice == 2:
 		print('{} - {} = {}'.format(num1, num2, subtract(num1,num2)))
 		return subtract(num1,num2)
+	
 	elif choice == 3:
 		print('{} x {} = {}'.format(num1, num2, multiply(num1,num2)))
 		return multiply(num1,num2)
+	
 	elif choice == 4:
 		print('{} / {} = {}'.format(num1, num2, divide(num1,num2)))
 		return divide(num1,num2)
+	
+	elif choice == 5:
+		print(__version__)
+		
 	else:
 		print("Invalid input")
